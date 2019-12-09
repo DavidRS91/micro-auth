@@ -1,0 +1,11 @@
+version: "3"
+services:
+  db:
+    image: "postgres"
+    container_name: "micro_auth"
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=pass
+      - POSTGRES_DB=micro_auth
+    ports:
+      - "5431:5432"
